@@ -21,3 +21,9 @@ fun main() {
     )
 }
 
+fun printReceipt(title: String, finalPrice: Int, note: String?) {
+    println("Judul Game : $title")
+    println("Harga Akhir: Rp$finalPrice")
+    println("Catatan    : ${note ?: "Tidak ada catatan"}")
+}
+
