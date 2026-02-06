@@ -1,8 +1,8 @@
 package week01
 
 fun main() {
-    var name: String = "Gavin"
-    var score: Int = 0
+    val name = "Gavin"
+    val score = 80
 
-    println("Nama:" + name + ", Nilai:" + score)
+    println("Nama: $name, Nilai: $score")
 }
