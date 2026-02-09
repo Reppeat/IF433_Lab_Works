@@ -22,6 +22,6 @@ fun main(){
         val major = scanner.nextLine()
 
         val s1 = Student(name, major, nim)
-        println("Status: Pendaftara Selesai ")
+        println("Status: Pendaftara Selesai !! ")
     }
 }
