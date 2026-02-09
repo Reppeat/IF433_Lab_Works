@@ -1,4 +1,4 @@
-package week02
+package week02.tugasmandiri1
 
 class Loan(
     val bookTitle: String,
