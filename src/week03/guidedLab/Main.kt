@@ -1,4 +1,4 @@
-package week03
+package week03.guidedLab
 
 fun main() {
     val e = Employee("BUDI")

@@ -1,4 +1,4 @@
-package oop_001_johnthor.week03
+package week03.guidedLab
 
 class Employee(val name: String) {
 
