@@ -13,7 +13,7 @@ fun main() {
     myCar.accelerate()
 
     println("\n--- Testing Electric Car ---")
-    val myElectricCar = ElectricCar(brand = "Tesla", 4)
+    val myElectricCar = ElectricCar(brand = "Tesla", 4, batteryCapacity = 98)
     myElectricCar.openTrunk()
     myElectricCar.honk()
     myElectricCar.accelerate()
