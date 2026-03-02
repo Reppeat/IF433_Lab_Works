@@ -8,12 +8,12 @@ class EWallet(
     override fun processPayment(amount: Double) {
         if (balance >= amount) {
             balance -= amount
-            println("✅ Pembayaran E-Wallet berhasil!")
+            println("Pembayaran E-Wallet berhasil!")
             println("   Akun     : $accountName")
             println("   Dibayar  : Rp$amount")
             println("   Sisa Saldo: Rp$balance")
         } else {
-            println("❌ Saldo tidak cukup!")
+            println("Saldo tidak cukup!")
             println("   Akun      : $accountName")
             println("   Saldo     : Rp$balance")
             println("   Dibutuhkan: Rp$amount")
