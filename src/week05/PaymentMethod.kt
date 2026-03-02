@@ -1,8 +1,6 @@
 package week05
 
-class PaymentMethod {
-    abstract class PaymentMethod(val accountName: String) {
+abstract class PaymentMethod(val accountName: String) {
 
-        abstract fun processPayment(amount: Double)
-    }
+    abstract fun processPayment(amount: Double)
 }

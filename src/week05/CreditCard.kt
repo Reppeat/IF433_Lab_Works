@@ -11,7 +11,7 @@ class CreditCard(
 
         if (usedAmount + amount <= limit) {
             usedAmount += amount
-            println("Pembayaran Kartu Kredit berhasil!")
+            println("✅ Pembayaran Kartu Kredit berhasil!")
             println("   Akun           : $accountName")
             println("   Dibayar        : Rp$amount")
             println("   Total Terpakai : Rp$usedAmount")
