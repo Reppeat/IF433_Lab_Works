@@ -8,7 +8,7 @@ fun main() {
     print("Masukkan nama Hero: ")
     val heroName = scanner.nextLine()
 
-    print ("Masukkan base damage hero: ")
+    print("Masukkan base damage hero: ")
     val baseDamage = scanner.nextInt()
 
     val hero = Hero(heroName, baseDamage)
@@ -27,7 +27,7 @@ fun main() {
         if (choice == 1) {
             hero.attack("Musuh")
             enemyHP -= hero.baseDamage
-            if (enemyHP < 0 ) enemyHP = 0
+            if (enemyHP < 0) enemyHP = 0
             println("HP Musuh tersisa:  $enemyHP")
 
             if (enemyHP > 0) {
@@ -36,7 +36,7 @@ fun main() {
                 hero.takeDamage(enemyDamage)
                 println("HP $hero{hero.name} tersisa: ${hero.hp}")
             }
-        }else if (choice == 2) {
+        } else if (choice == 2) {
             println("${hero.name} memilih kabur dari pertarungan!")
             break
         } else {
@@ -48,9 +48,9 @@ fun main() {
     println("\n--- Pertarungan Selesai ---- ")
     if (hero.isAlive() && enemyHP < 0) {
         println("${hero.name} menang!")
-    } else if (!hero.isAlive() && enemyHP > 0 ) {
+    } else if (!hero.isAlive() && enemyHP > 0) {
         println("Musuh Menang !")
-    }else {
+    } else {
         println("Pertarungan berakhir tanpa pemenang. ")
     }
 }

@@ -13,7 +13,8 @@ class Hero(
         hp -= damage
         if (hp <= 0) hp = 0
     }
-    fun isAlive() : Boolean {
+
+    fun isAlive(): Boolean {
         return hp > 0
     }
 }
