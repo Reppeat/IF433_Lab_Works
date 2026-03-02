@@ -9,7 +9,7 @@ fun main() {
     val paymentMethods: List<PaymentMethod> = listOf(eWallet, creditCard)
 
     println("======================================")
-    println("  SISTEM PEMBAYARAN E-COMMERCE")
+    println("SISTEM PEMBAYARAN")
     println("  Jumlah Tagihan: Rp75000.0")
     println("======================================")
     println()
