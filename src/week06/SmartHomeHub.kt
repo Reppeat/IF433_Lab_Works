@@ -18,4 +18,15 @@ class SmartHomeHub {
         }
         println("Semua perangkat telah dimatikan.")
     }
+    fun activateSecurityMode() {
+        println("\n SmartHomeHub: MODE KEAMANAN AKTIF LOH YA")
+        for (device in devices) {
+            if (device is Recordable) {
+                device.startRecord()
+            }
+            if (device is SmartSpeaker) {
+                device.playMusic("Sirine Peringatan")             }
+        }
+        println("Mode keamanan aktif.")
+    }
 }
