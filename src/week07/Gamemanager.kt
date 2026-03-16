@@ -1,14 +1,15 @@
 package week07
 
 object GameManager {
-    var isGameRunning: Boolean = false
+    private var isGameRunning: Boolean = false
 
     fun startGame() {
         if (isGameRunning) {
-            println("Game sudah berjalan! Mencegah instansiasi ganda.")
-        } else {
-            isGameRunning = true
-            println("Memulai Game Engine...")
+            println("⚠️ Game sudah berjalan! Mencegah instansiasi ganda.")
+            return
         }
+
+        isGameRunning = true
+        println("🚀 Memulai Game Engine...")
     }
 }
