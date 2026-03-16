@@ -13,7 +13,7 @@ fun main() {
     val reg1 = RegularUser("Alice", 22)
     val reg2 = RegularUser("Alice", 22)
     println(reg1)
-    println("Sama? {$reg1 == $reg2}")\
+    println("Sama? {$reg1 == $reg2}")
 
     print("\n=== TEST DATA CLASS ===")
     val data1 = DataUser("Alice", 22)
@@ -33,5 +33,6 @@ fun main() {
     val uiMessage = when(response) {
         is ApiResponse.Success -> "Tampilkan: ${response.data}"
         is ApiResponse.Error -> "Munculkan alert: ${response.message}"
+        ApiResponse.Loading -> "Tampilkan Spinner"
     }
 }

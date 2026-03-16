@@ -1,5 +1,5 @@
 package week06
 
 interface PaymentMethod {
-    fun pay(amount: Double):
+    fun pay(amount: Double)
 }
