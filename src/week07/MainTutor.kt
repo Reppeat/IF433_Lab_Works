@@ -1,6 +1,14 @@
 package week07
 
 fun main() {
+    println("=== TEST FACTORY & ENUM ===")
+    println("Drop chance LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}%")
+    val starterWeapon = Weapon.forgeStarterSword()
+    println("Senjata Awal: ${starterWeapon.item.name}")
+    println("Damage: ${starterWeapon.item.damage}")
+    println("Rarity: ${starterWeapon.item.rarity}")
+    println("Durability: ${starterWeapon.durability}")
+
     println("=== TEST SINGLETON ===")
     println("Status: ${DatabaseManager.ConnectionStatus}")
     DatabaseManager.connect()
