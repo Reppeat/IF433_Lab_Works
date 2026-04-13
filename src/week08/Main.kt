@@ -35,6 +35,13 @@ fun main() {
     val safeString = someObject as? String ?: "Unknown String"
     println("Hasil cast + fallback: $safeString")
 
+    val toxicData: String? = null
+    try {
+        val length = toxicData!!.length // CRASH disengaja
+    } catch (e: NullPointerException) {
+        println("CRASH (NPE)! Jangan gunakan !! sembarangan.")
+    }
+
     println(receipt)
 
 }
