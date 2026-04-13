@@ -1,6 +1,6 @@
 package week08
 
-fun parseProduct(rawJson: Map): Product? {
+fun parseProduct(rawJson: Map<String, Any?>): Product? {
     val id = requireNotNull(rawJson["id"] as? String) {
         "API Invalid: Missing ID" }
     val name = requireNotNull(rawJson["name"] as? String) {
