@@ -13,3 +13,13 @@ fun parseProduct(rawJson: Map): Product? {
         else -> null
     }
 }
+
+fun checkout(product: Product) {
+    val id = when (product) {
+        is Electronic -> product.id
+        is Clothing   -> product.id
+    }
+    // !! justified: Java service selalu return non-null
+    val txId = JavaPaymentService.processPayment(id)!!
+    println("Transaction ID: $txId")
+}
