@@ -2,6 +2,13 @@ package week09
 
 fun main() {
     println("=== TEST LIST ===")
+    val uniqueNumbers = setOf(1,2,2,3,3,4)
+    println("Unique numbers (Set): $uniqueNumbers")
+
+    val activeUsers = mutableSetOf("UserA", "UserB")
+    activeUsers.add("UserC")
+    activeUsers.add("UserA")
+    println("Active Users: $activeUsers")
     val frameworks: List<String> = listOf("Kotlin", "Java", "C++")
     println("Immutable List: $frameworks")
 
