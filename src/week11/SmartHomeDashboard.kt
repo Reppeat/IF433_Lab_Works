@@ -8,4 +8,12 @@ fun main() {
     homeDevices.forEach {
         println(it.diagnose())
     }
+    val lamp = SmartDevice("", "").apply {
+        name = "Philips WiZ Living Room"
+        category = "Lighting"
+        isOnline = true
+        powerLoad = 12
+    }.also {
+        homeDevices.add(it)
+    }
 }
