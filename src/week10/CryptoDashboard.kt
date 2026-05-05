@@ -16,7 +16,8 @@ fun main() {
     }
 
     println("\n=== Search 'BTC' ===")
-    val searchResult = coinRepo.searchByName("BTC")
+3
+        val searchResult = coinRepo.searchByName("BTC")
     searchResult.forEach {
         println("Found: ${(it as Coin).name}")
     }
