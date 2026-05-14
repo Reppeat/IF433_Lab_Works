@@ -11,7 +11,7 @@ fun dispenseKibble(
     }
 
     if (isJammed) {
-        throw DispenserJamException
+        throw DispenserJamException()
     }
 
     if (requestedGram > availableGram) {
