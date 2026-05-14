@@ -41,4 +41,14 @@ fun main () {
     } finally {
         println("Siklus pengecekan dispenser pagi selesai.")
     }
+
+    // Jadwal Makan sore
+
+    runCatching {
+        dispenseKibble(
+            requestedGram =30,
+            availableGram = 1000,
+            isJammed = false
+        )
+    }
 }
