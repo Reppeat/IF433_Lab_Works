@@ -33,7 +33,7 @@ fun main () {
             isJammed = false
         )
     } catch (e: DispenserJamException) {
-        println("EROR DISPENSER: ${e.message}")
+        println("ERROR DISPENSER: ${e.message}")
     } catch (e: FoodEmptyException) {
         println("ERROR STOK: ${e.message}")
     } catch (e:Exception) {
@@ -55,6 +55,14 @@ fun main () {
 
         println(
             "Makan sore sukses! Sisa stok kibble: $currentKibbleStock gr"
+        )
+    }.onFailure { error ->
+
+        println("Peringantan ke Pemilik: ${error.message}"
+        )
+
+        println(
+            "(Opsional: Berikan chicken jerky secara manual)"
         )
     }
 }
